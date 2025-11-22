@@ -45,6 +45,7 @@ npm install
 ``` bash
 npm start
 ```
+Open browser: http://localhost:3000/
 
 ## 🗄️ Database Setup
 
@@ -55,6 +56,13 @@ CREATE TABLE rooms (id INT AUTO_INCREMENT PRIMARY KEY, room_number VARCHAR(20), 
 CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY, full_name VARCHAR(100), phone VARCHAR(20), email VARCHAR(100));
 CREATE TABLE bookings (id INT AUTO_INCREMENT PRIMARY KEY, room_id INT, customer_id INT, check_in DATE, check_out DATE);
 ```
+## Contributing
+
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature/your-feature`
+3. Make changes and commit: `git commit -m "Add feature"`
+4. Push to your branch: `git push origin feature/your-feature`
+5. Open a pull request
 
 ## 📜 License
 
