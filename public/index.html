@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GrandStay - Hotel Dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="/mnt/data/3a6ed125-fb5b-436a-8bec-33f0841dcb67.png" alt="logo" class="logo-thumb"/>
+        <div>
+          <h1>GrandStay</h1>
+          <small>Hotel Management</small>
+        </div>
+      </div>
+      <nav>
+        <a class="active">Dashboard</a>
+        <a>Rooms</a>
+        <a>Housekeeping</a>
+        <a>Facilities</a>
+        <a>Staff</a>
+        <a>Reservations</a>
+        <a>Reports</a>
+        <a>Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h2>Hotel Dashboard</h2>
+        <div class="profile">JD<br/><small>Hotel Manager</small></div>
+      </header>
+
+      <section class="metrics">
+        <div class="card metric" id="totalRooms">
+          <div class="title">Total Rooms</div>
+          <div class="value">--</div>
+          <div class="subtitle" id="roomsAvailable"></div>
+        </div>
+
+        <div class="card metric" id="occupancy">
+          <div class="title">Occupancy Rate</div>
+          <div class="value">--</div>
+          <div class="subtitle" id="occupancyChange"></div>
+        </div>
+
+        <div class="card metric" id="housekeepingCount">
+          <div class="title">Housekeeping Tasks</div>
+          <div class="value">--</div>
+          <div class="subtitle" id="hkPending"></div>
+        </div>
+
+        <div class="card metric" id="checkins">
+          <div class="title">Today's Check-ins</div>
+          <div class="value">--</div>
+          <div class="subtitle" id="vipArrivals"></div>
+        </div>
+      </section>
+
+      <section class="tabs">
+        <div class="tab-header">
+          <button class="active">Housekeeping</button>
+          <button>Facilities</button>
+          <button>Rooms Status</button>
+          <button>Online Booking</button>
+          <div class="spacer"></div>
+          <button class="btn small" id="addTaskBtn">+ Add Task</button>
+        </div>
+
+        <div class="tab-content">
+          <h3>Housekeeping Tasks</h3>
+          <div class="tasks" id="tasksContainer">
+            <!-- tasks loaded here -->
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
