@@ -20,9 +20,29 @@ Node.js, Express, and MySQL**.
 -   `.env` configuration
 
 ## ⚙️ Installation
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/gatwirival/hotel-service-system.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd hotel-service-system
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
 
 ``` bash
-npm install
 npm start
 ```
 
